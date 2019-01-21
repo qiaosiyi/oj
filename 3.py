@@ -1,3 +1,12 @@
+def same_num(a,b):
+	summ = 0
+	for i in a:
+		for j in b:
+			if i == j:
+				summ = summ + 1
+	return summ
+
+
 file_object = open('guess.in', 'rb')
 flag = 1
 for line in file_object:
@@ -20,14 +29,13 @@ for line in file_object:
 		i = i + 1
 for i in range(N):
 	tempsum = 0
-	for j in range(len(anm[i])):
-		if listtotal[anm[i][j]] == 2:
-			tempsum = tempsum + 1
-	if tempsum < len(anm[i]):
-		tempsum = tempsum + 1
-	if tempsum > maxnum:
+	for j in range(N):
+		if i != j and i < j:
+			tempsum = same_num(anm[i],anm[j]) + 1
+	if maxnum < tempsum:
 		maxnum = tempsum
-		
+
+
 file_object = open('guess.out', 'w')
 file_object.write(str(maxnum)+'\n')
 file_object.close()
