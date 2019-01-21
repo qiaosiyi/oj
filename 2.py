@@ -34,7 +34,7 @@ for line in file_object:
 			
 			k = find_p(num[0])
 			trans(k)
-			result = result + k
+			result = result + 1
 			if done():
 				#print result
 				break
