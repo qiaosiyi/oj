@@ -1,4 +1,3 @@
-# coding=UTF-8
 def next_position(before,a,b):
 	if before == a or before == b:
 		if before == a:
