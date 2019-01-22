@@ -45,7 +45,6 @@ for line in file_object:
 		if done():
 			break
 		while ~done():
-			
 			k = find_p(num[0])
 			trans(k)
 			result = result + 1
@@ -57,6 +56,3 @@ file_object = open('sleepy.out', 'w')
 file_object.write(str(result)+'\n')
 file_object.close()
 
-
-
-	
