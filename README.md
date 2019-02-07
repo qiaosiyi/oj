@@ -12,3 +12,7 @@ aaa
 8bubblesort.cpp
 
 >生成随机序列，起泡排序。
+
+9mergesort.cpp
+
+>生成随机序列，归并排序。
