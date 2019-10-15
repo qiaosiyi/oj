@@ -1,7 +1,7 @@
 ###
  匹配字符串中所有时间格式的子串
-  input：2lo3j4hoqilu234hpq324po2019-01-01T10:10:102ioup34ypoquhi23rp
-  output:2019-01-01T10:10:10
+  input："2lo3j4hoqilu234hpq324po2019-01-01T10:10:102ioup34ypoquhi23rp"
+  output:"2019-01-01T10:10:10"
 ###
 
 import re
