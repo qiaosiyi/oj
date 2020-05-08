@@ -4,12 +4,10 @@
 a = [('Bob', 75), ('Adam', 92), ('Bart', 66), ('Lisa', 88)]
 
 #对分数进行排序
-
 def by_s(a):
     return -a[1]
 
 #对名字进行排序
-
 def by_n(a):
     return a[0].lower()
 
