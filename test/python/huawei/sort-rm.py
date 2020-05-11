@@ -8,10 +8,26 @@
 
 while True:
     try:
-        
-        n = raw_input()
+        n = input()
         numlist = []
+        # print "n =",n
         for i in range(n):
-            numlist.append(raw_input())
+            indata = input()
+            numlist.append(indata)
+            # print indata
     except:
         exit()
+    
+    numlist.sort()
+    # print numlist
+    tmp = numlist[0]
+    res = []
+    res.append(tmp)
+    for i in range(n - 1):
+        if numlist[i+1] == tmp:
+            continue
+        else:
+            tmp = numlist[i+1]
+            res.append(tmp)
+    print res
+
