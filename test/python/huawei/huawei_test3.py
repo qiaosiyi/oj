@@ -9,6 +9,7 @@
 #第二行读者数
 #第三行开始读者想看书列表
 #每行至少包含1本书的id
+## ???what the f*????
 
 def is_manzu(shu,ren,index,res):
   
