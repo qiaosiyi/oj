@@ -12,7 +12,7 @@
 ## ???what the f*????
 
 def is_manzu(shu,ren,index,res):
-  
+
 
 while True:
   try:
