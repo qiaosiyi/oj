@@ -1,5 +1,8 @@
 # coding=UTF-8
 # 第一行表示公交站位置序号，第二行表示路灯位置，求最小亮度。
+# 1,3,4,2
+# 3
+# 2 output
 
 def is_fu_gai(lu_deng,gong_jiao_zhan,liang_du):
   fu_gai = {}
@@ -16,7 +19,6 @@ def is_fu_gai(lu_deng,gong_jiao_zhan,liang_du):
       pass
     else:
       return 0
-  
   return 1
 
 
@@ -31,7 +33,6 @@ while True:
   lu_deng = lu_deng.split(',')
   gong_jiao_zhan.sort()
 
-
   gjz = []
   ld = []
   for i in gong_jiao_zhan:
@@ -39,10 +40,6 @@ while True:
   for i in lu_deng:
     ld.append(int(i))
   liang_du = 0
-
-  # print gjz
-  # print ld
-
 
   for i in range(2000):
     if is_fu_gai(ld,gjz,liang_du):
